@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Spa extends Model {}
 
-Project.init(
+Spa.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,37 +11,37 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    serviceType: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
       type: DataTypes.STRING,
     },
-    date_created: {
+    price: {
+      type: DataTypes.DECIMAL, 
+      allowNull: false, 
+      validate: {isDecimal: true}
+    },
+    date: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
-    user_id: {
+    profileId: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'profile',
         key: 'id',
       },
     },
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'spa',
   }
 );
 
-module.exports = Project;
+module.exports = Spa;
