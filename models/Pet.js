@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Profile extends Model {}
+class Pet extends Model {}
 
-Profile.init(
+Pet.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,18 +11,17 @@ Profile.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    createdAcctId: {    // associates with the create account model
-      type: DataTypes.INTEGER,
-      references: {
-      model: "createacct",
-      key: "id"
-      }
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    petId: {         // associates with the pet model
+    image: {
+      type: DataTypes.IMAGE,
+    },
+    profileId: {
       type: DataTypes.INTEGER,
-      allowNull: true,
       references: {
-        model: 'pet',
+        model: 'profile',
         key: 'id',
       },
     },
@@ -32,8 +31,8 @@ Profile.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'profile',
+    modelName: 'pet',
   }
 );
 
-module.exports = Profile;
+module.exports = Pet;

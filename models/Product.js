@@ -29,13 +29,6 @@ Product.init(
       toDefaultValue: 10,
       validate: {isNumeric: true}
     },
-    categoryId: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'category',
-        key: 'id',
-      },
-    },
   },
   {
     sequelize,
