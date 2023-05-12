@@ -20,6 +20,7 @@ Profile.init(
     },
     petId: {         // associates with the pet model
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
         model: 'pet',
         key: 'id',
