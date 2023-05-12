@@ -27,7 +27,7 @@ Hotel.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    profileId: {
+    profileId: {    // associates with the profile model
       type: DataTypes.INTEGER,
       references: {
         model: 'profile',
