@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Spa extends Model {}
+class Pet extends Model {}
 
-Spa.init(
+Pet.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,23 +11,14 @@ Spa.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    serviceType: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    image: {
+      type: DataTypes.IMAGE,
     },
-    price: {
-      type: DataTypes.DECIMAL, 
-      allowNull: false, 
-      validate: {isDecimal: true}
-    },
-    date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    profileId: {       // associates with the profile model
+    profileId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'profile',
@@ -40,8 +31,8 @@ Spa.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'spa',
+    modelName: 'pet',
   }
 );
 
-module.exports = Spa;
+module.exports = Pet;

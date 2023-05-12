@@ -16,10 +16,6 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -33,6 +29,13 @@ User.init(
         len: [8],
       },
     },
+    profileId: {        // associates with the profile model
+      type: DataTypes.INTEGER,
+      references: {
+      model: "profile",
+      key: "id"
+      }
+    }
   },
   {
     hooks: {
