@@ -18,8 +18,8 @@ Pet.init(
     image: {
       type: DataTypes.IMAGE,
     },
-    profileId: {
-      type: DataTypes.INTEGER,
+    profileId: {    // associates with the profile model
+      type: DataTypes.INTEGER,  
       references: {
         model: 'profile',
         key: 'id',
