@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { Profile, User } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { Profile, User } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
@@ -27,6 +27,10 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get("/landingpage", async (req, res) => {
+  res.render("landingpage")
+})
+
 router.get('/project/:id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
@@ -40,7 +44,7 @@ router.get('/project/:id', async (req, res) => {
 
     const project = projectData.get({ plain: true });
 
-    res.render('project', {
+    res.render('hotel', {
       ...project,
       logged_in: req.session.logged_in
     });
