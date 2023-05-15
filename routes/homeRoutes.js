@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Profile, User, Spa } = require('../models');
+const { Profile, User, Spa, Hotel } = require('../models');
 const withAuth = require('../utils/auth');
 
 // router.get('/', async (req, res) => {
@@ -27,15 +27,15 @@ const withAuth = require('../utils/auth');
 //   }
 // });
 
-router.get("/", async (req, res) => {
+router.get('/landingpage', async (req, res) => {
   res.render("landingpage")
 })
 
-router.get("/login", async (req, res) => {
+router.get('/login', async (req, res) => {
   res.render("login")
 })
 
-router.get("/profile", async (req, res) => {
+router.get('/profile/:id', async (req, res) => {
   const user = await User.findByPk(req.session)
   res.render("profile", { user })
 })
