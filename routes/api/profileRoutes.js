@@ -18,7 +18,7 @@ router.get('/:id', async (req, res) => {
     }
   });
 
-  // UPDATE a profile
+// UPDATE a profile
 router.put('/:id', (req, res) => {
     // update profile data
     Profile.update(req.body, {
