@@ -1,9 +1,41 @@
 <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Add to Cart</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users as |user|}}
+            <tr>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.email}}</td>
+                <th><button id={{user.id}}>Add a Pet Profile</button></th>
+            </tr>
+            {{/each}}
+        </tbody>
+        {{!-- <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td>100.00</td>
+                <th><button>Add To Cart</button></th>
+            </tr>
+        </tfoot> --}}
+    </table>
+</body>
+
+{{!-- <body>
   <div class="row">
     <div class="col-auto">
       <h2>Welcome, {{name}}!</h2>
     </div>
   </div>
+
+
 
   <div class="row mt-4">
     <div class="col-md-6">
@@ -44,7 +76,7 @@
       {{/each}}
     </div>
     {{/if}}
-  </div>
+  </div> --}}
 
   <script src="./js/profile.js"></script>
-</body>
+{{!-- </body> --}}
