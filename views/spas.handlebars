@@ -1,0 +1,29 @@
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Add to Cart</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each spas as |spa|}}
+            <tr>
+                <td>{{spa.serviceType}}</td>
+                <td>{{spa.description}}</td>
+                <td>{{spa.price}}</td>
+                <th><button id={{spa.id}}>Schedule Reservation</button></th>
+            </tr>
+            {{/each}}
+        </tbody>
+        {{!-- <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td>100.00</td>
+                <th><button>Add To Cart</button></th>
+            </tr>
+        </tfoot> --}}
+    </table>
+</body>
