@@ -1,41 +1,35 @@
 [
   {
-    "id": "",
     "name": "Soothing Saucer® Kit",
     "description": "The Soothing Saucer®’s patented design promotes licking and helps reduce feelings of stress and anxiety.",
     "price": "$35.00",
     "stock": "10"
   },
   {
-    "id": "",
     "name": "Wrap-Ups® Bacon Cheeseburger Flavor",
     "description": "Wrap-Ups® were created for dogs & cats, and it’s a perfect solution for every size and shape of pill, capsule, or tablet.",
     "price": "$6.99",
     "stock": "20"
   },
   {
-    "id": "",
     "name": "Stash & Dash®",
     "description": "Stash & Dash™ treat dispenser allows you to easily take your training treats to go.",
     "price": "$17.99",
     "stock": "20"
   },
   {
-    "id": "",
     "name": "Frisco Faux Fur Crown Pillow Cat & Dog Bed",
     "description": "The Frisco Faux Fur Crown Pillow Bed is the ultimate spot for your small pet to snuggle up in any time of day.",
     "price": "$27.05",
     "stock": "15"
   },
   {
-    "id": "",
     "name": "Goody Box Kitten Toys & Treats",
     "description": " Inside, you’ll find everything you need to start your friendship off on the right paw—13 action-packed toys to train their hunting skills and two full-size treats so they can snack happy.",
     "price": "$24.99",
     "stock": "5"
   },
   {
-    "id": "",
     "name": "",
     "description": "",
     "price": "",

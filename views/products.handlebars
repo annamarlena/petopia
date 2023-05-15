@@ -1,0 +1,11 @@
+<body>
+    {{#each products as |product|}}
+    <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.stock}}</td>
+        <th><button id={{product.id}}>add to cart</button></th>
+    </tr>
+    {{/each}}
+</body>
