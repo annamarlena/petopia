@@ -1,23 +1,25 @@
 const sequelize = require('../config/connection');
-const { User, Project } = require('../models');
+const { User, Hotel, Pet, Product, Spa, Reservation } = require('../models');
 
 const userData = require('./userData.json');
-const projectData = require('./projectData.json');
+const petData = require('./petData.json');
+const spaData = require('./spaData.json');
+const hotelData = require('./hotelData.json');
+const reservationData = require('./reservationData.json')
+const productData = require('./productData.json')
+
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const users = await User.bulkCreate(userData, {
+  await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
-
-  for (const project of projectData) {
-    await Project.create({
-      ...project,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  await Pet.bulkCreate(petData);
+  await Hotel.bulkCreate(hotelData);
+  await Spa.bulkCreate(spaData);
+  await Reservation.bulkCreate(reservationData);
 
   process.exit(0);
 };

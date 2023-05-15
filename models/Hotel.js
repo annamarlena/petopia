@@ -22,25 +22,14 @@ Hotel.init(
       type: DataTypes.DECIMAL, 
       allowNull: false, 
       validate: {isDecimal: true}
-    },
-    date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    profileId: {    // associates with the profile model
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'profile',
-        key: 'id',
-      },
-    },
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'hotel',
+    modelName: 'Hotel',
   }
 );
 

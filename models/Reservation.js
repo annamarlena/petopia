@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Pet extends Model {}
+class Reservation extends Model {}
 
-Pet.init(
+Reservation.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,28 +11,40 @@ Pet.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    date: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: new Date()
     },
-    image: {
-      type: DataTypes.STRING,
-    },
-    userId: {    // associates with the profile model
+    hotelId: {    
       type: DataTypes.INTEGER,  
       references: {
-        model: 'User',
+        model: 'Hotel',
+        key: 'id',
+      },
+    },
+    spaId: {    
+      type: DataTypes.INTEGER,  
+      references: {
+        model: 'Spa',
+        key: 'id',
+      },
+    },
+    petId: {   
+      type: DataTypes.INTEGER,  
+      references: {
+        model: 'Pet',
         key: 'id',
       },
     },
   },
   {
     sequelize,
-    timestamps: true,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Pet',
+    modelName: 'Reservation',
   }
 );
 
-module.exports = Pet;
+module.exports = Reservation;
