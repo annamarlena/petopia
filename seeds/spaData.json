@@ -1,26 +1,17 @@
 [
     {
-        "id": "",
-        "serviceType": "",
-        "description": "",
-        "price": "",
-        "date": "",
-        "profileId": ""
+        "serviceType": "Massage",
+        "description": "For your little old man dogs.",
+        "price": 50.99
     },
     {
-        "id": "",
-        "serviceType": "",
-        "description": "",
-        "price": "",
-        "date": "",
-        "profileId": ""
+        "serviceType": "Facial",
+        "description": "Clean off that scruffy face.",
+        "price": 20.99
     },
     {
-        "id": "",
-        "serviceType": "",
-        "description": "",
-        "price": "",
-        "date": "",
-        "profileId": ""
+        "serviceType": "Teeth Brushing",
+        "description": "Seriously your dog has bad breath.",
+        "price": 42.99
     }
 ]

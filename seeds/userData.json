@@ -1,20 +1,14 @@
 [
-  {
-    "id": "",
-    "email": "sal@hotmail.com",
-    "password": "password12345",
-    "profileId": ""
-  },
-  {
-    "id": "",
-    "email": "lernantino@gmail.com",
-    "password": "password12345",
-    "profileId": ""
-  },
-  {
-    "id": "",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345",
-    "profileId": ""
-  }
-]
+    {
+        "firstName": "Katy",
+        "lastName": "Vincent",
+        "email": "garyisalwayswrong@yahoo.com",
+        "password": "password12345"
+    },
+    {
+        "firstName": "Gary",
+        "lastName": "Almes",
+        "email": "katyisalwaysright@gmail.com",
+        "password": "password12345"
+    }
+  ]

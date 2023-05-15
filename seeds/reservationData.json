@@ -1,0 +1,10 @@
+[
+  {
+    "petId": 1,
+    "spaId": 2
+  },
+  {
+    "petId": 2,
+    "hotelId": 1
+  }
+]

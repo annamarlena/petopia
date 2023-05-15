@@ -1,18 +1,12 @@
 [
     {
-        "id": "",
-        "stayType": "",
-        "description": "",
-        "price": "",
-        "date": "",
-        "profileId": ""
+        "stayType": "Puppy Pamper",
+        "description": "It's pretty with plants and stuff.",
+        "price": 200.99
     },
     {
-        "id": "",
-        "stayType": "",
-        "description": "",
-        "price": "",
-        "date": "",
-        "profileId": ""
+        "stayType": "Kitty Kuddles",
+        "description": "Lots of catnip provided.",
+        "price": 199.99
     }
 ]

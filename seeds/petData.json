@@ -1,20 +1,12 @@
 [
     {
-        "id": "",
-        "name": "",
+        "name": "Dizzy",
         "image": "",
-        "profileId": ""
+        "userId": 1
     },
     {
-        "id": "",
-        "name": "",
+        "name": "Buddy",
         "image": "",
-        "profileId": ""
-    },
-    {
-        "id": "",
-        "name": "",
-        "image": "",
-        "profileId": ""
+        "userId": 2
     }
 ]
