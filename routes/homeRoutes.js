@@ -27,7 +27,7 @@ const withAuth = require('../utils/auth');
 //   }
 // });
 
-router.get('/', async (req, res) => {
+router.get('/landingpage', async (req, res) => {
   res.render("landingpage")
 })
 
