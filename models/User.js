@@ -16,6 +16,14 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    firstName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    lastName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,13 +36,6 @@ User.init(
       validate: {
         len: [8],
       },
-    },
-    profileId: {        // associates with the profile model
-      type: DataTypes.INTEGER,
-      references: {
-      model: "profile",
-      key: "id"
-      }
     }
   },
   {
@@ -52,7 +53,7 @@ User.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'User',
   }
 );
 
