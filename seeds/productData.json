@@ -3,36 +3,77 @@
     "name": "Soothing Saucer® Kit",
     "description": "The Soothing Saucer®’s patented design promotes licking and helps reduce feelings of stress and anxiety.",
     "price": "$35.00",
-    "stock": "10"
+    "stock": 10,
+    "image": "../../soucer.webp"
   },
   {
     "name": "Wrap-Ups® Bacon Cheeseburger Flavor",
     "description": "Wrap-Ups® were created for dogs & cats, and it’s a perfect solution for every size and shape of pill, capsule, or tablet.",
     "price": "$6.99",
-    "stock": "20"
+    "stock": 20,
+    "image": "../../WrapUps.webp"
   },
   {
     "name": "Stash & Dash®",
     "description": "Stash & Dash™ treat dispenser allows you to easily take your training treats to go.",
     "price": "$17.99",
-    "stock": "20"
+    "stock": 20,
+    "image": "../../StashAndDash.webp"
   },
   {
     "name": "Frisco Faux Fur Crown Pillow Cat & Dog Bed",
     "description": "The Frisco Faux Fur Crown Pillow Bed is the ultimate spot for your small pet to snuggle up in any time of day.",
     "price": "$27.05",
-    "stock": "15"
+    "stock": 15,
+    "image": "../../petbed.webp"
   },
   {
     "name": "Goody Box Kitten Toys & Treats",
-    "description": " Inside, you’ll find everything you need to start your friendship off on the right paw—13 action-packed toys to train their hunting skills and two full-size treats so they can snack happy.",
+    "description": "Inside, you’ll find everything you need to start your friendship off on the right paw—13 action-packed toys to train their hunting skills and two full-size treats so they can snack happy.",
     "price": "$24.99",
-    "stock": "5"
+    "stock": 5, 
+    "image": "../../goodybox.webp"
   },
   {
-    "name": "",
-    "description": "",
-    "price": "",
-    "stock": ""
+    "name": "Frisco Guacamole Hide & Seek Puzzle Plush Squeaky Dog To",
+    "description": "This toy comes with a plush aguacate guacamole bowl with three hiding spots and three cute plush toys―a lime, a chip, and an avocado―guaranteed to keep your dog on the hunt for their squeaky deliciousness.",
+    "price": "$8.87",
+    "stock": 50,
+    "image": "../../FriscoToy.jpg"
+  },
+  {
+    "name": "iFetch Mini Automatic Ball Launcher Dog Toy",
+    "description": "Designed especially for small to medium dogs, this interactive dog toy launches the ball for you! It’s perfect for when you’re away or busy doing other things—like getting his dinner ready—while ensuring he gets all the mental and physical exercise that he needs.",
+    "price": "$110.50",
+    "stock": 5,
+    "image": "../../iFetch.webp"
+  },
+  {
+    "name": "iDig Stay Dog Toy",
+    "description": "This toy allows you to load the three flaps with your canine companion’s favorite treats and toys, so your pup can go dig them out. The Stay version is designed with a hard-shell plastic base, which is the paw-fect option for aggressive diggers.",
+    "price": "$99.99",
+    "stock": 5,
+    "image": "../../iDig.webp"
+  },
+  {
+    "name": "P.L.A.Y. Pet Lifestyle and You American Classic Food Set Squeaky Plush Dog Toy",
+    "description": "Complete with a burger, fries, a milkshake, a hot dog and a chicken drumstick, this toy set is ready for fetching, chasing and romping. Each fun toy comes with a unique feature. ",
+    "price": "$51.90",
+    "stock": 5,
+    "image": "../../PLAYset.webp"
+  },
+  {
+    "name": "Petique Feline Chateau Cat Scratcher Toy",
+    "description": "Your feline friend will truly feel like royalty when she climbs into this kitty mansion. Crafted from non-toxic recycled cardboard, this is a great eco-friendly alternative to other kitty house construction. ",
+    "price": "$114.95",
+    "stock": 2,
+    "image": "ChateauScratcher.webp"
+  },
+  {
+    "name": "Coziwow by Jaxpety Collapsible Cat Tunnel Bed",
+    "description": "Made from soft, plush fabric, this hideout features a large tunnel, a comfy, detachable cotton bed and two irresistible scratching toys.",
+    "price": "$39.99",
+    "stock": 10,
+    "image": "../../Coziwow.webp"
   }
 ]
