@@ -97,6 +97,9 @@ input, select, textarea {
 	  font: inherit;
 		vertical-align: baseline;
 	}
+	button .showPetProfile {
+		
+	}
 
 	body {
 		margin-top:30px;
