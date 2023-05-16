@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Profile, User, Spa, Hotel } = require('../models');
+const { Profile, User, Spa, Hotel, Pet } = require('../models');
 const withAuth = require('../utils/auth');
 
 
@@ -13,6 +13,7 @@ router.get('/login', async (req, res) => {
 
 router.get("/profile", async (req, res) => {
   const user = await User.findByPk(req.session.user_id)
+  const pets = await Pet.findByPk(req.session.user_id)
   console.log(user)
   res.render("profile", { user, pets })
 })
