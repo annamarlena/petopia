@@ -90,7 +90,7 @@ input, select, textarea {
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-		margin: 0;
+		margin: auto;
 	  padding: 0;
 	  border: 0;
 	  font-size: 100%;
@@ -98,9 +98,9 @@ input, select, textarea {
 		vertical-align: baseline;
 	}
 
-	/* body {
-		background: grey;
-	} */
+	body {
+		margin-top:30px;
+	}
 
 		/* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;

@@ -1,7 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
+* {
+    /* margin:0; */
+}
+body {
+    margin-top:-30px!important;
+    margin-left:0;
+}
+
 table thead tr .thead {
     font-weight: 900;
     font-size:1.5rem;
     border-bottom:1px solid #000000;
     z-index:10000;
 }
+div  .table-wrapper {
+    margin:auto;
+    z-index:3;
+}
+/* nav {
+    margin:0;
+} */
 
+.spotlight {
+    background-color: white;
+    margin-top:30px;
+    border-top: 20px;
+    border-color: black;
+    border-style: solid;
+    align-items: center;
+    display: flex;
+}
+#two {
+    border-bottom:10px solid #000000;
+}
+
+article .main {
+    border-bottom:10px solid black;
+    
+}
+
+hr {
+    border-bottom:10px solid #000000;
+}
+
+button {
+    border:1px solid #000000;
+    color:#000000;
+}
+
+table {
+    margin:auto;
+}
