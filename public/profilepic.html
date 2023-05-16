@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/profilepic.css">
+    <title>profile pic upload</title>
+</head>
+
+    <header>
+        <div class="col-6">
+            <center><h2>UserName</h2></center>
+            <center><h4>email</h4></center>
+            
+        </div>
+    </header>
+    <div class="revealcard">
+    <center><button onclick="btn" id="revealDiv">Create Pet Profile</button></center>
+        <div class="hero">
+            <div class="card">
+                <h2 class="username"></h2>
+                <h3 class="email"></h3>
+                <img src="images/profile.png" id="profile-pic" alt="">
+                <label for="input-file">update image</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+            </div>
+        </div>
+    </div>
+    <center><div class="Pet Info">
+        <h3>Pet Name</h3>
+        <textarea name="petName" id="petName" cols="30" rows="10"></textarea>
+        <h3>Pet Breed</h3>
+        <textarea name="petBreed" id="petBreed" cols="30" rows="10"></textarea>
+        <h3>Pet Information</h3>
+        <textarea name="petInformation" id="petInformation" cols="30" rows="10"></textarea>
+        <button>Save Information</button>
+    </div></center> 
+    <script>
+let profilePic = document.getElementById("profile-pic");
+let inputFile = document.getElementById("input-file");
+
+inputFile.onchange = function() {
+    profilePic.src = URL.createObjectURL(inputFile.files[0])
+}
+    </script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.scrolly.min.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <script src="./js/breakpoints.min.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>

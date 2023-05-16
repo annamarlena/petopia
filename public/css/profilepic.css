@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
 }
 header {
     margin:auto;
@@ -11,13 +11,16 @@ header {
     padding:50px;
     border:1px solid #000000;
 }
-
+.petInfo textarea {
+    width:80%;
+}
 header h2 {
-    font-size:;
+    font-size:3rem;
 }
 header h4 {
-    font-size:
+    font-size:1.8rem;
 }
+
 
 .hero {
     width:100%;
