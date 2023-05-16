@@ -97,7 +97,7 @@ main {
     margin:auto;
     font-size:1.8rem;
     background-color: white;
-    border-bottom:3px solid black;
+    /* border-bottom:3px solid black; */
     padding-bottom:0px;
 }
 .savedPetInformation li {
