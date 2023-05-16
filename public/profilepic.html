@@ -7,17 +7,39 @@
     <link rel="stylesheet" href="./css/profilepic.css">
     <title>profile pic upload</title>
 </head>
-
-    <header>
-        <div class="col-6">
-            <center><h2>UserName</h2></center>
-            <center><h4>email</h4></center>
+<body>
+    <div>
+        <div class="hero">
+            <article class="">
+                <left><img class="float-left" src="images/profile.png" id="profile-pic" alt=""></left>
+            </article>
+            <article class="">
+                <center><h2>UserasfdghdjkhgfdsName</h2></center>
+                <center><h4>email</h4></center>
+            </article>
+            
             
         </div>
-    </header>
-    <div class="revealcard">
-    <center><button onclick="btn" id="revealDiv">Create Pet Profile</button></center>
-        <div class="hero">
+    </div>
+
+    <div class="savedPetInformation float-right">
+        <article id="pet">
+        <center><h3>Your Pet Information</h3></center>
+            <center><ul>
+                <!-- <li><h3></h3></li> -->
+                <li id="petName">dog</li>
+                <li id="petBreed">dog</li>
+                <li id="petInformation">doggy</li>
+            </ul></center>
+        </article>
+    </div>
+
+    <main class="main">
+        <article class="float-left"></article>
+        <center><h3>Create Pet Profile</h3></center>
+        <center><div class="flex one">
+            
+
             <div class="card">
                 <h2 class="username"></h2>
                 <h3 class="email"></h3>
@@ -25,17 +47,25 @@
                 <label for="input-file">update image</label>
                 <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
             </div>
-        </div>
-    </div>
-    <center><div class="Pet Info">
-        <h3>Pet Name</h3>
-        <textarea name="petName" id="petName" cols="30" rows="10"></textarea>
-        <h3>Pet Breed</h3>
-        <textarea name="petBreed" id="petBreed" cols="30" rows="10"></textarea>
-        <h3>Pet Information</h3>
-        <textarea name="petInformation" id="petInformation" cols="30" rows="10"></textarea>
-        <button>Save Information</button>
-    </div></center> 
+            <center><div class="petInfo float-right">
+                <h3>Pet Name</h3>
+                <textarea name="petName" id="petName" cols="30" rows="10"></textarea>
+                <h3>Pet Breed</h3>
+                <textarea name="petBreed" id="petBreed" cols="30" rows="10"></textarea>
+                <h3>Pet Information</h3>
+                <textarea name="petInformation" id="petInformation" cols="30" rows="10"></textarea>
+                <center><button id="saveBtn" onclick="saveData">Save Information</button></center>
+            </div></center>
+        </div></center>
+        
+    </main>
+    <footer id="footer">
+        <ul class="copyright">
+            <li>By. Mylan, Marlena, Tyler, & Linkin</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+</body>   
     <script>
 let profilePic = document.getElementById("profile-pic");
 let inputFile = document.getElementById("input-file");
@@ -51,5 +81,5 @@ inputFile.onchange = function() {
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
     
-</body>
+
 </html>
