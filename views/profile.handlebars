@@ -1,5 +1,6 @@
+
   <header id="header" class="alt">
-		<h1><a href="/landingpage">Petopia</a></h1>
+		<h1><a href="/profile">Petopia</a></h1>
 		<nav id="nav">
 			<ul>
 				<li class="special">
@@ -16,16 +17,17 @@
 			</ul>
 		</nav>
 	</header>
-  <p>{{user.name}}</p>
+  <body>
+  <p>Welcome, {{user.name}}</p>
 
-            {{#each pets as |pet|}}
+    {{#each pets as |pet|}}
 
-                {{pet.name}}
-               
-                <button id={{user.id}}>Add a Pet Profile</button>
-            {{/each}}
+        {{pet.name}}
+        
+        <button id={{pet.id}}>Add a Pet Profile</button>
+    {{/each}}
 
-
+</body>
 
 {{!-- <body>
   <div class="row">

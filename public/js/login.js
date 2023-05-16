@@ -1,5 +1,6 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
+  console.log("===== LOGIN BUTTON CLICKED")
 
   // Collect values from the login form
   const email = document.querySelector('#email-login').value.trim();
@@ -15,7 +16,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      document.location.replace('./profile');
     } else {
       alert(response.statusText);
     }
@@ -24,13 +25,21 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
+  console.log("===== SIGNUP BUTTON CLICKED")
 
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
+  // console.log("Dummy route send")
+  // fetch("/api/users/signup").then(res => {
+  //   console.log(res)
+  // })
+
   if (name && email && password) {
-    const response = await fetch('/api/users', {
+    console.log("===== SIGNUP FETCH SENT")
+    console.log(name, email, password)
+    const response = await fetch('/api/users/signup', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),
       headers: { 'Content-Type': 'application/json' },
