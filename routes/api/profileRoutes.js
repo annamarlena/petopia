@@ -1,15 +1,15 @@
 const router = require('express').Router();
-const { Profile, CreateAcct, Pet } = require('../../models');
+const { Profile, User, Pet } = require('../../models');
 
 // GET one profile
 router.get('/:id', async (req, res) => {
     try {
       const profileData = await Profile.findByPk(req.params.id, {
-          include: [ { model: CreateAcct}, {model: Pet} ]
+          include: [ { model: User}, {model: Pet} ]
        }
      );
       if (!profileData) {
-        res.status(404).json({ message: "No pet found with this id!" });
+        res.status(404).json({ message: "No profile found with this id!" });
         return;
       }
       res.status(200).json(profileData);
