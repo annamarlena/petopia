@@ -1,7 +1,22 @@
+
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
+    background-color: lightgrey;
+}
+header {
+    margin:auto;
+    margin-bottom: 30px;
+    padding:50px;
+    border:1px solid #000000;
+}
+
+header h2 {
+    font-size:;
+}
+header h4 {
+    font-size:
 }
 
 .hero {
@@ -11,6 +26,10 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+}
+button .revealDiv:active {
+    visibility: visible;
 }
 
 .card {
