@@ -1,8 +1,27 @@
-<body>
+	<link rel="stylesheet" href="./css/login.css" />
+  <header id="header" class="alt">
+		<h1><a href="/landingpage">Petopia</a></h1>
+		<nav id="nav">
+			<ul>
+				<li class="special">
+					<a href="#menu" class="menuToggle"><span>Menu</span></a>
+					<div id="menu">
+						<ul>
+							<li><a href="/landingpage">Home</a></li>
+							<li><a href="/hotels">Pet Hotel</a></li>
+							<li><a href="/spas">Pet Spa</a></li>
+							<li><a href="/login">Log In</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<div class="container">
   <div class="row">
     <div class="col-md-6">
       <h2>Login</h2>
-
+  
       <form class="form login-form">
         <div class="form-group">
           <label for="email-login">Email:</label>
@@ -18,8 +37,9 @@
       </form>
     </div>
     <div class="col-md-6">
-      <h2>Signup</h2>
 
+    <div class="sign-space">
+      <h2>Signup</h2>
       <form class="form signup-form">
         <div class="form-group">
           <label for="name-signup">Name:</label>
@@ -36,9 +56,8 @@
         <div class="form-group">
           <button class="btn btn-primary" type="submit">Signup</button>
         </div>
+      </div>
       </form>
     </div>
   </div>
-
-  <script src="./js/login.js"></script>
-</body>
+</div>

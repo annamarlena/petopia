@@ -1,13 +1,11 @@
 [
     {
-        "firstName": "Katy",
-        "lastName": "Vincent",
+        "name": "Katy",
         "email": "garyisalwayswrong@yahoo.com",
         "password": "password12345"
     },
     {
-        "firstName": "Gary",
-        "lastName": "Almes",
+        "name": "Gary",
         "email": "katyisalwaysright@gmail.com",
         "password": "password12345"
     }
