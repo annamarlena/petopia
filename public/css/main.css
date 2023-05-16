@@ -90,7 +90,7 @@ input, select, textarea {
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-		margin: auto;
+		margin: 0;
 	  padding: 0;
 	  border: 0;
 	  font-size: 100%;
@@ -98,9 +98,9 @@ input, select, textarea {
 		vertical-align: baseline;
 	}
 
-	body {
-		margin-top:30px;
-	}
+	/* body {
+		background: grey;
+	} */
 
 		/* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -2357,6 +2357,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
+	
 
 	table {
 		margin: 0 0 2em 0;
@@ -2418,7 +2419,19 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			} */
-
+div #spa {
+	margin:auto;
+}
+tr button {
+	border:1px solid #000000;
+	color:#000000;
+}
+tr th {
+	margin-left:10px;
+}
+table thead {
+	border-bottom: 3px solid #000000;
+}
 /* Button */
 
 	 input[type="submit"],
@@ -2728,6 +2741,9 @@ input, select, textarea {
 			order: 2; */
 			max-width: 48em;
 			width: 60%;
+		}
+		.spotlight.spa {
+			border-bottom: 10px solid #000000;
 		}
 
 		.spotlight:nth-child(2n) {
