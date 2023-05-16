@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>User Profile</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./css/main.css" />
+	<noscript><link rel="stylesheet" href="./css/profilepic.css" /></noscript>
+</head>
+<body>
+    <header id="header" class="alt">
+        <h1><a href="index.html">Petopia</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="generic.html">Pet Hotel</a></li>
+                            <li><a href="elements.html">Pet Spa</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <main>
+                <div>
+                    <!-- username -->
+                    <!-- email? -->
+                    <!-- user info -->
+                </div>
+            </main>
+            <button class="showPetProfile"></button>
+            <div class="addPetProfile">
+                <div>
+                    
+                </div>
+
+
+            </div>
+            
+
+
+            <div class="hero">
+                <div class="card">
+                    <h2 class="username"></h2>
+                    <h3 class="email"></h3>
+                    <img src="images/profile.png" id="profile-pic" alt="">
+                    <label for="input-file">update image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        
+                </div>
+        
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <footer id="footer">
+        <ul class="copyright">
+            <li>By. Mylan, Marlena, Tyler, & Linkin</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+    <script>
+let profilePic = document.getElementById("profile-pic");
+let inputFile = document.getElementById("input-file");
+inputFile.onchange = function() {
+    profilePic.src = URL.createObjectURL(inputFile.files[0])}    
+    </script>
+</body>
+</html>
