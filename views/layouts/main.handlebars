@@ -12,14 +12,24 @@
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/noscript.css" />
 	</head>
+					<!-- Header -->
+
       <!-- Render the sub layout -->
       {{{ body }}}
 
-
   <!-- Render script for logged in users only -->
-  {{#if logged_in}}
+
+{{!-- </body> --}}
+
+<!-- Footer -->
+	<footer id="footer">
+		<ul class="copyright">
+			<li>By. Mylan, Marlena, Tyler, & Linkin</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
+	  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-{{!-- </body> --}}
+	<script src="./js/login.js"></script>
 
 </html>

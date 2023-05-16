@@ -1,32 +1,31 @@
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Add to Cart</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each users as |user|}}
-            <tr>
-                <td>{{user.firstName}}</td>
-                <td>{{user.lastName}}</td>
-                <td>{{user.email}}</td>
-                <th><button id={{user.id}}>Add a Pet Profile</button></th>
-            </tr>
+  <header id="header" class="alt">
+		<h1><a href="/landingpage">Petopia</a></h1>
+		<nav id="nav">
+			<ul>
+				<li class="special">
+					<a href="#menu" class="menuToggle"><span>Menu</span></a>
+					<div id="menu">
+						<ul>
+							<li><a href="/landingpage">Home</a></li>
+							<li><a href="/hotels">Pet Hotel</a></li>
+							<li><a href="/spas">Pet Spa</a></li>
+							<li><a href="/login">Log In</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+  <p>{{user.name}}</p>
+
+            {{#each pets as |pet|}}
+
+                {{pet.name}}
+               
+                <button id={{user.id}}>Add a Pet Profile</button>
             {{/each}}
-        </tbody>
-        {{!-- <tfoot>
-            <tr>
-                <td colspan="2"></td>
-                <td>100.00</td>
-                <th><button>Add To Cart</button></th>
-            </tr>
-        </tfoot> --}}
-    </table>
-</body>
+
+
 
 {{!-- <body>
   <div class="row">

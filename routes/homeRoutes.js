@@ -12,8 +12,9 @@ router.get('/login', async (req, res) => {
 })
 
 router.get("/profile", async (req, res) => {
-  const user = await User.findByPk(req.session)
-  res.render("profile", { user })
+  const user = await User.findByPk(req.session.user_id)
+  console.log(user)
+  res.render("profile", { user, pets })
 })
 
 router.get('/spas', async (req, res) => {
