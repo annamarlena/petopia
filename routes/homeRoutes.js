@@ -15,6 +15,7 @@ router.get("/profile", async (req, res) => {
   const user = await User.findByPk(req.session.user_id)
   const pets = await Pet.findByPk(req.session.user_id)
   console.log(user)
+  console.log(pets)
   res.render("profile", { user, pets })
 })
 
