@@ -1,81 +1,91 @@
+<head>
+	<title>User Profile</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./css/profilepic.css" />
+</head>
 
-  <header id="header" class="alt">
-		<h1><a href="/profile">Petopia</a></h1>
-		<nav id="nav">
-			<ul>
-				<li class="special">
-					<a href="#menu" class="menuToggle"><span>Menu</span></a>
-					<div id="menu">
-						<ul>
-							<li><a href="/landingpage">Home</a></li>
-							<li><a href="/hotels">Pet Hotel</a></li>
-							<li><a href="/spas">Pet Spa</a></li>
-							<li><a href="/login">Log In</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</nav>
-	</header>
+<header id="header" class="alt">
+  <h1><a href="/landingpage">Petopia</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="/landingpage">Home</a></li>
+            <li><a href="/hotels">Pet Hotel</a></li>
+            <li><a href="/spas">Pet Spa</a></li>
+            <li><a href="/login">Log In</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
 
 <body>
-  <div class="row">
-    <div class="col-auto">
-      <h2>Welcome, {{name}}!</h2>
-    </div>
-  </div>
 
-    <p>{{user.name}}</p>
+  <div>         
+    <article class="col-4 hero float-left">      
+        <img src="./images/DL2.jpg" id="profile-pic" alt="">
+    </article>
 
-    {{#each pets as |pet|}}
-
-        {{pet.name}}
-        
-        <button id={{pet.id}}>Add a Pet Profile</button>
-    {{/each}}
-
-</body>
-
-  {{!-- <div class="row mt-4">
-    <div class="col-md-6">
-      <h3>Create a New Project:</h3>
-
-      <form class="form new-project-form">
-        <div class="form-group">
-          <label for="project-name">project name:</label>
-          <input class="form-input" type="text" id="project-name" name="project-name" />
-        </div>
-        <div class="form-group">
-          <label for="project-funding">needed funding ($):</label>
-          <input class="form-input" type="number" id="project-funding" name="project-funding" />
-        </div>
-        <div class="form-group">
-          <label for="project-desc">description:</label>
-          <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Create</button>
-        </div>
-      </form>
-    </div>
-
-    {{#if projects.length}}
-    <div class="col-md-6 project-list">
-      <h3>Current Projects:</h3>
-
-      {{#each projects as |project|}}
-      <div class="row mb-2">
-        <div class="col-md-8">
-          <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-        </div>
+    <article class="col-4 hero float-right">
+      <div class="savedPetInformation">
+        <article id="pet">
+          <center><h3>{{pet.name}}</h3></center>
+            <center>
+              <form>
+                <div id="petName">
+                  <input class="form-input" type="text" id="pet.name" />
+                </div>
+              </form>
+            </center>
+        </article>
       </div>
-      {{/each}}
-    </div>
-    {{/if}}
-  </div> --}}
+    </article>
+   </div>
+
+  <main class="main">
+    <article class="float-left"></article>
+    <center><h3>Create Pet Profile</h3></center>
+      <center>
+        <div class="flex one"> 
+          <div class="card">
+              <center> <img src="images/profile.img" id="profile-pic" alt="">
+                  <label for="input-file">Update Pet Image</label>
+                  <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+              </center>
+          </div>
+        </div>
+          
+        <center>
+          <div class="petInfo float-right">
+              <h3>Pet Name</h3>
+              <form>                    
+                <textarea name="petName" id="petName" cols="30" rows="10"></textarea>
+              </form>
+          </div>
+        </center>
+      </center>    
+  </main>
+  
+  <script>
+    let profilePic = document.getElementById("profile-pic");
+    let inputFile = document.getElementById("input-file");
+
+    inputFile.onchange = function() {
+        profilePic.src = URL.createObjectURL(inputFile.files[0])
+    }
+  </script>
+
 
   <script src="./js/profile.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.scrolly.min.js"></script>
+  <script src="./js/browser.min.js"></script>
+  <script src="./js/breakpoints.min.js"></script>
+  <script src="./js/util.js"></script>
+  <script src="./js/main.js"></script>
 </body>
