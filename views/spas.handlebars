@@ -36,48 +36,29 @@
     <section id="three" class="wrapper style3 special">
         <div class="inner">
             <h2>Pet Spa Services</h2>
-                <ul class="features">
-                        <h3>Shampoo bath $50</h3>
-                        <p>We will give your animal a bath along with a thorough deep clean and rinse using shampoo</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                        <h3>Haircut $60</h3>
-                        <p>Is your animals coat getting too long and scruffy? We will give them a trim up according to what you want</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                        <h3>Brushing $40</h3>
-                        <p>We also offer pet brushing which will take your pets scruffy coat and make it silky smooth</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                        <h3>Nail Clipping $30</h3>
-                        <p>Lastly we also clip all your pets long nails</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                </ul>
-        </div>
-    </section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Add to Cart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each spas as |spa|}}
+                        <tr>
+                            <td>{{spa.serviceType}}</td>
+                            <td>{{spa.description}}</td>
+                            <td>{{spa.price}}</td>
+                            <th><button id={{spa.id}}>Schedule Reservation</button></th>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+     </section>
     </div>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Add to Cart</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each spas as |spa|}}
-            <tr>
-                <td>{{spa.serviceType}}</td>
-                <td>{{spa.description}}</td>
-                <td>{{spa.price}}</td>
-                <th><button id={{spa.id}}>Schedule Reservation</button></th>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
 
 <!-- Scripts -->
     <script src="./js/jquery.min.js"></script>

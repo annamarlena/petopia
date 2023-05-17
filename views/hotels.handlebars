@@ -35,49 +35,30 @@
         <!-- Three -->
         <section id="three" class="wrapper style3 special">
             <div class="inner">
-                    <h2>Pet Hotel Services</h2>
-                <ul class="features">
-                        <h3>1-day $100</h3>
-                        <p>We will watch, feed, and play with your pet for 1-day</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                        <h3>3-days $275</h3>
-                        <p>We will watch, feed, and play with your pet for 3-days</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                        <h3>5-days $450</h3>
-                        <p>We will watch, feed, and play with your pet for 5-days</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                        <h3>1-week $625</h3>
-                        <p>We will watch, feed, and play with your pet for 1-week</p>
-                        <a href="#" class="button fit primary">Book Now</a>
-                    </li>
-                </ul>
+                <h2>Pet Hotel Services</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Add to Cart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each hotels as |hotel|}}
+                        <tr>
+                            <td>{{hotel.stayType}}</td>
+                            <td>{{hotel.description}}</td>
+                            <td>{{hotel.price}}</td>
+                            <th><button id={{hotel.id}}>Schedule Reservation</button></th>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
             </div>
         </section>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Add to Cart</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each hotels as |hotel|}}
-            <tr>
-                <td>{{hotel.stayType}}</td>
-                <td>{{hotel.description}}</td>
-                <td>{{hotel.price}}</td>
-                <th><button id={{hotel.id}}>Schedule Reservation</button></th>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
-</div>
+    </div>
 
     <!-- Scripts -->
     <script src="./js/jquery.min.js"></script>
