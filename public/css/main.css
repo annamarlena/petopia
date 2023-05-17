@@ -4034,3 +4034,13 @@ table thead {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	} */
+
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* text-align: center; */
+		/* line-height: 100px; */
+		padding: 100px 5% 100px 5%;
+		border-top: 20px solid black;
+	}

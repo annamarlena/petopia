@@ -1,77 +1,66 @@
 <head>
-	<title>User Profile</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="./css/profilepic.css" />
+  <title>User Profile</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/profilepic.css">
 </head>
+<body>
+
+<div id="page-wrapper">
 
 <header id="header" class="alt">
-  <h1><a href="/landingpage">Petopia</a></h1>
-  <nav id="nav">
-    <ul>
-      <li class="special">
-        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-        <div id="menu">
-          <ul>
-            <li><a href="/landingpage">Home</a></li>
-            <li><a href="/hotels">Pet Hotel</a></li>
-            <li><a href="/spas">Pet Spa</a></li>
-            <li><a href="/login">Log In</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </nav>
+    <h1><a href="/landingpage">Petopia</a></h1>
+    <nav id="nav">
+        <ul>
+            <li class="special">
+                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                <div id="menu">
+                    <ul>
+                      <li><a href="/landingpage">Home</a></li>
+                      <li><a href="/hotels">Pet Hotel</a></li>
+                      <li><a href="/spas">Pet Spa</a></li>
+                      <li><a href="/login">Log In</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <body>
 
-  <div>         
-    <article class="col-4 hero float-left">      
-        <img src="./images/DL2.jpg" id="profile-pic" alt="">
-    </article>
-
-    <article class="col-4 hero float-right">
-      <div class="savedPetInformation">
-        <article id="pet">
-          <center><h3>{{pet.name}}</h3></center>
-            <center>
-              <form>
-                <div id="petName">
-                  <input class="form-input" type="text" id="pet.name" />
-                </div>
-              </form>
-            </center>
-        </article>
+  <section class="main">
+  <div class="profile-card">
+    <div class="insert-name">
+        <h2>Welcome{{user.name}}</h2>
+     </div>
+     <div class="image-profile-html">
+        <img class="dogo-img" src="./images/DL2.jpg" id="profile-pic" alt="">
+    </div>
+    <div class="data">
+      <h3>Pet picture</h3>
+        <input class="form-input" type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+    </div>
+    <div class="data">
+      <h3>Pet Name{{pet.name}}</h3>
+      <input class="form-input" type="text" id="email-signup" />
+    </div>
+     <div class="data">
+        <h3>Pet breed</h3>
+        <input class="form-input" type="text" id="email-signup" />
       </div>
-    </article>
-   </div>
+      <div class="data">
+        <h3>Pet age</h3>
+        <input class="form-input" type="text" id="email-signup" />
+      </div>
+    <div class="buttons">
+      <a href="#" class="button fit primary">Save Profile</a>
+    </div>
+  </div>
+</section>
 
-  <main class="main">
-    <article class="float-left"></article>
-    <center><h3>Create Pet Profile</h3></center>
-      <center>
-        <div class="flex one"> 
-          <div class="card">
-              <center> <img src="images/profile.img" id="profile-pic" alt="">
-                  <label for="input-file">Update Pet Image</label>
-                  <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
-              </center>
-          </div>
-        </div>
-          
-        <center>
-          <div class="petInfo float-right">
-              <h3>Pet Name</h3>
-              <form>                    
-                <textarea name="petName" id="petName" cols="30" rows="10"></textarea>
-              </form>
-          </div>
-        </center>
-      </center>    
-  </main>
-  
-  <script>
+<script>
     let profilePic = document.getElementById("profile-pic");
     let inputFile = document.getElementById("input-file");
 
@@ -80,7 +69,6 @@
     }
   </script>
 
-
   <script src="./js/profile.js"></script>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/jquery.scrolly.min.js"></script>
@@ -88,4 +76,5 @@
   <script src="./js/breakpoints.min.js"></script>
   <script src="./js/util.js"></script>
   <script src="./js/main.js"></script>
+
 </body>
