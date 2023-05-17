@@ -1,17 +1,22 @@
 [
     {
-        "serviceType": "Massage",
-        "description": "For your little old man dogs.",
-        "price": 50.99
+        "serviceType": "Shampoo bath",
+        "description": "We will give your animal a bath along with a thorough deep clean and rinse using shampoo.",
+        "price": "$50"
     },
     {
-        "serviceType": "Facial",
-        "description": "Clean off that scruffy face.",
-        "price": 20.99
+        "serviceType": "Haircut",
+        "description": "Is your animals coat getting too long and scruffy? We will give them a trim up according to what you want",
+        "price": "$60"
     },
     {
-        "serviceType": "Teeth Brushing",
-        "description": "Seriously your dog has bad breath.",
-        "price": 42.99
+        "serviceType": "Brushing",
+        "description": "We also offer pet brushing which will take your pets scruffy coat and make it silky smooth",
+        "price": "$40"
+    },
+    {
+        "serviceType": "Nail Clipping",
+        "description": "Lastly we also clip all your pets long nails",
+        "price": "$30"
     }
 ]
