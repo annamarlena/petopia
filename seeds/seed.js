@@ -20,6 +20,8 @@ const seedDatabase = async () => {
   await Hotel.bulkCreate(hotelData);
   await Spa.bulkCreate(spaData);
   await Reservation.bulkCreate(reservationData);
+  await Product.bulkCreate(productData);
+  
 
   process.exit(0);
 };
