@@ -1,12 +1,22 @@
 [
     {
-        "stayType": "Puppy Pamper",
-        "description": "It's pretty with plants and stuff.",
-        "price": 200.99
+        "stayType": "1-day",
+        "description": "We will watch, feed, and play with your pet for 1-day",
+        "price": "$99.99"
     },
     {
-        "stayType": "Kitty Kuddles",
-        "description": "Lots of catnip provided.",
-        "price": 199.99
+        "stayType": "3-days",
+        "description": "We will watch, feed, and play with your pet for 3-days",
+        "price": "$275"
+    },
+    {
+        "stayType": "5-days",
+        "description": ">We will watch, feed, and play with your pet for 5-days",
+        "price": "$450"
+    },
+    {
+        "stayType": "1-week",
+        "description": "We will watch, feed, and play with your pet for 1-week",
+        "price": "$625"
     }
 ]
