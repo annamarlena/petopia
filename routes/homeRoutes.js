@@ -3,7 +3,7 @@ const { Profile, User, Spa, Hotel, Pet } = require('../models');
 const withAuth = require('../utils/auth');
 
 
-router.get('/landingpage', async (req, res) => {
+router.get('/', async (req, res) => {
   res.render("landingpage")
 })
 
