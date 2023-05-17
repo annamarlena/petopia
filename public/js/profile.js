@@ -40,6 +40,3 @@ document
   .querySelector('.new-profile')
   .addEventListener('submit', newFormHandler);
 
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
