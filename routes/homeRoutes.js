@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Profile, User, Spa, Hotel, Pet } = require('../models');
+const { Profile, User, Spa, Hotel, Pet, Product } = require('../models');
 const withAuth = require('../utils/auth');
 
 
@@ -11,12 +11,11 @@ router.get('/login', async (req, res) => {
   res.render("login")
 })
 
-router.get("/profile", async (req, res) => {
+router.get("/profile", withAuth, async (req, res) => {
   const user = await User.findByPk(req.session.user_id)
   const pets = await Pet.findByPk(req.session.user_id)
-  console.log(user)
-  console.log(pets)
-  res.render("profile", { user, pets })
+  const serialUser = user.get({plain: true})
+  res.render("profile", { user: serialUser, pets: serialUser })
 })
 
 router.get('/spas', async (req, res) => {
@@ -50,7 +49,7 @@ router.get('/hotels', async (req, res) => {
   }
 });
 
-router.get('products', async (req, res) => {
+router.get('/products', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const productData = await Product.findAll({});
@@ -65,25 +64,6 @@ router.get('products', async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Profile }],
-    });
-
-    const user = userData.get({ plain: true });
-
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
