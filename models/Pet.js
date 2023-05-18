@@ -18,6 +18,12 @@ Pet.init(
     image: {
       type: DataTypes.STRING,
     },
+    breed: {
+      type: DataTypes.STRING,
+    },
+    age: {
+      type: DataTypes.INTEGER,
+    },
     userId: {    // associates with the profile model
       type: DataTypes.INTEGER,  
       references: {
