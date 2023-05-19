@@ -5,15 +5,6 @@ const Reservation = require('./Reservation')
 const Spa = require('./Spa')
 const Hotel = require('./Hotel')
 
-// User.hasMany(Product, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE'
-// });
-
-// Product.belongsToMany(User, {
-//   foreignKey: 'user_id'
-// });
-
 Pet.belongsTo(User, {
   foreignKey: 'userId'
 })

@@ -6,7 +6,7 @@ router.post('/', (req, res) => {
     Pet.create({
       name: req.body.name,
       image: req.body.image,
-      profileId: req.body.profileId ,
+      profileId: req.body.profileId,
       breed: req.body.breed,
       age: req.body.age
     })
@@ -28,5 +28,4 @@ router.get('/:id', async (req, res) => {
     }
   });
   
-
 module.exports = router;
