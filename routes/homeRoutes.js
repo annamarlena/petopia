@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Profile, User, Spa, Hotel, Pet, Product } = require('../models');
 const withAuth = require('../utils/auth');
 
-
 router.get('/', async (req, res) => {
   res.render("landingpage")
 })
@@ -63,7 +62,6 @@ router.get('/products', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route

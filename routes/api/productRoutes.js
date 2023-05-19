@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const { Product } = require('../../models');
 
-
-
 // GET all products
 router.get('/', async (req, res) => {
   try {
