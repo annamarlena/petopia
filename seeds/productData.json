@@ -29,13 +29,13 @@
   },
   {
     "name": "Goody Box Kitten Toys & Treats",
-    "description": "Inside, you’ll find everything you need to start your friendship off on the right paw—13 action-packed toys to train their hunting skills and two full-size treats so they can snack happy.",
+    "description": "Inside, you’ll find everything you need to start your friendship off on the right paw: 13 action-packed toys to train their hunting skills and two full-size treats so they can snack happy.",
     "price": 24.99,
     "stock": 5, 
     "image": "../../goodybox.webp"
   },
   {
-    "name": "Frisco Guacamole Hide & Seek Puzzle Plush Squeaky Dog To",
+    "name": "Frisco Guacamole Hide & Seek Puzzle Plush Squeaky Dog Toy",
     "description": "This toy comes with a plush aguacate guacamole bowl with three hiding spots and three cute plush toys―a lime, a chip, and an avocado―guaranteed to keep your dog on the hunt for their squeaky deliciousness.",
     "price": 8.87,
     "stock": 50,
@@ -57,14 +57,14 @@
   },
   {
     "name": "P.L.A.Y. Pet Lifestyle and You American Classic Food Set Squeaky Plush Dog Toy",
-    "description": "Complete with a burger, fries, a milkshake, a hot dog and a chicken drumstick, this toy set is ready for fetching, chasing and romping. Each fun toy comes with a unique feature. ",
+    "description": "Complete with a burger, fries, a milkshake, a hot dog and a chicken drumstick, this toy set is ready for fetching, chasing and romping. Each fun toy comes with a unique feature.",
     "price": 51.90,
     "stock": 5,
     "image": "../../PLAYset.webp"
   },
   {
     "name": "Petique Feline Chateau Cat Scratcher Toy",
-    "description": "Your feline friend will truly feel like royalty when she climbs into this kitty mansion. Crafted from non-toxic recycled cardboard, this is a great eco-friendly alternative to other kitty house construction. ",
+    "description": "Your feline friend will truly feel like royalty when she climbs into this kitty mansion. Crafted from non-toxic recycled cardboard, this is a great eco-friendly alternative to other kitty house construction.",
     "price": 114.95,
     "stock": 2,
     "image": "ChateauScratcher.webp"
