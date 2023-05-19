@@ -35,7 +35,8 @@
   <section class="main">
   <div class="profile-card">
     <div class="insert-name">
-        <h2>Welcome! {{user.name}}, and {{pets.userId}}</h2>
+        <h2>Welcome {{user.name}}!</h2>
+        {{!-- and {{pets.userId}} <------- add an if statement here to include the pet name, but only if there's a pet profile attached --}}
      </div>
      <div class="image-profile-html">
         <img class="dogo-img" src="./images/DL2.jpg" id="profile-pic" alt="Hand combing the top of a small dog's head">
@@ -70,6 +71,34 @@
         profilePic.src = URL.createObjectURL(inputFile.files[0])
     }
   </script>
+
+  <section id="three" class="wrapper style3 special">
+    <div class="inner">
+        <h2>My Pets</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+          {{!-- This loops through the entire pet table. How to get multiple pets by the user's id? And how to save the image in the table? --}}
+            <tbody>
+                {{#each pets as |pet|}}
+                <tr>
+                    <td>{{pet.image}}</td>
+                    <td>{{pet.name}}</td>
+                    <td>{{pet.breed}}</td>
+                    <td>{{pet.age}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>
 
   <script src="./js/profile.js"></script>
   <script src="./js/logout.js"></script>
