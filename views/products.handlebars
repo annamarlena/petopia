@@ -29,6 +29,7 @@
 				<h2>Pet Products</h2>
 				<p>If you're in need of a restock on pet food, treats, or are looking for a new toy for your pet to enjoy, check out our Pet Products page!</p>
 			</div>
+			  </section>
 		</section>
 
         <!-- Three -->
@@ -39,9 +40,9 @@
                 <table>
 					<thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price $:</th>
+                            <th id="uno">Name</th>
+                            <th id="dos">Description</th>
+                            <th id="tres">Price $:</th>
                             <th>In Stock</th>
                         </tr>
                     </thead>
@@ -50,7 +51,7 @@
                        {{#each products as |product|}}
 						<tr>
 							<td>{{product.name}}</td>
-							<td>{{product.description}}</td>
+							<td id="dos">{{product.description}}</td>
 							<td>{{product.price}}</td>
 							<td>{{product.stock}}</td>
 							<td>{{product.image}}</td>

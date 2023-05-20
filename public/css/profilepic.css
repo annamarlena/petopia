@@ -1,81 +1,81 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .main{
-    width: 100%;
-    padding-top: 125px;
-    padding-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  padding-top: 125px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .profile-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1120px;
-    max-width: 500px;
-    width: 100%;
-    border-radius: 25px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1120px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
 }
 
 .dogo-img {
-    height: 300px;
-    width: 300px;
-    border: 5px solid black;
-    object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border: 5px solid black;
+  object-fit: cover;
 }
 
 .input-upload{
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .insert-name {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .data{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .data h3{
-    font-size: 25px;
-    font-weight: 600;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .upload-file{
-    align-items: center;
-    font-size: 25px;
-    font-weight: 600;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
 } 
 
 .buttons{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .form-input {
-    color: black;
-    background-color: rgb(193, 193, 193);
-    margin: 1rem;
-    font-size: 1.2rem;
-    border: 5px solid black;
-  }
+  color: black;
+  background-color: rgb(193, 193, 193);
+  margin: 1rem;
+  font-size: 1.2rem;
+  border: 5px solid black;
+}

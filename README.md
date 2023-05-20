@@ -13,9 +13,27 @@
 - Mylan, Marlena, Tyler, & Linkin
 
 ## Link to deployed heroku application
-- 
+- https://petopia.herokuapp.com/
 
 ## Screenshots of webpage
-![Screenshot of home page](./)
-![Screenshot of home page](./)
-![Screenshot of home page](./)
+![Screenshot of home page](./public/images/readme%20images/Screenshot%202023-05-20%20012415.png)
+- 
+- 
+- 
+- 
+![Screenshot of home page](./public/images/readme%20images/Screenshot%202023-05-20%20013255.png)
+- 
+- 
+- 
+- 
+![Screenshot of home page](./public/images/readme%20images/Screenshot%202023-05-20%20013906.png)
+- 
+- 
+- 
+- 
+![Screenshot of home page](./public/images/readme%20images/Screenshot%202023-05-20%20013954.png)
+- 
+- 
+- 
+- 
+![Screenshot of home page](./public/images/readme%20images/Screenshot%202023-05-20%20014120.png)

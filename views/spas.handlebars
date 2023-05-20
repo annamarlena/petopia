@@ -40,9 +40,9 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
+                            <th id="uno">Name</th>
+                            <th id="dos">Description</th>
+                            <th id="tres">Price</th>
                             <th>Add to Cart</th>
                         </tr>
                     </thead>
@@ -50,7 +50,7 @@
                         {{#each spas as |spa|}}
                         <tr>
                             <td>{{spa.serviceType}}</td>
-                            <td>{{spa.description}}</td>
+                            <td id="dos">{{spa.description}}</td>
                             <td>{{spa.price}}</td>
                             <th><button class="button fit primary" id={{spa.id}}>Schedule Reservation</button></th>
                         </tr>
