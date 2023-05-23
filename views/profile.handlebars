@@ -73,7 +73,7 @@
     }
   </script>
 
-  {{!-- <section id="three" class="wrapper style3 special">
+  <section id="three" class="wrapper style3 special">
     <div class="inner">
         <h2>My Pets</h2>
         <table>
@@ -86,11 +86,11 @@
                 </tr>
             </thead>
 
-          {{!-- This loops through the entire pet table. How to get multiple pets by the user's id? And how to save the image in the table? --}}
+          {{!-- Line 93 provided by Katy --}}
             <tbody>
                 {{#each pets as |pet|}}
                 <tr>
-                    <td>{{pet.image}}</td>
+                    <td><img class="dogo-img" src={{pet.image}}></td>
                     <td>{{pet.name}}</td>
                     <td>{{pet.breed}}</td>
                     <td>{{pet.age}}</td>
@@ -99,7 +99,7 @@
             </tbody>
         </table>
     </div>
-  </section> --}}
+  </section>
 
   <script src="./js/profile.js"></script>
   <script src="./js/logout.js"></script>
