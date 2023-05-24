@@ -1,12 +1,16 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#profile-name').value.trim();
+  // ---- Lines 5 - 17 from Katy ----
+  const name = document.querySelector('#name').value.trim();
+  const breed = document.querySelector('#breed').value.trim();
+  const image = document.querySelector('#input-file').value.trim();
+  const age = document.querySelector('#age').value.trim();
 
-  if (name && needed_funding && description) {
-    const response = await fetch(`/api/profile`, {
+  if (name && breed && image && age) {
+    const response = await fetch(`/api/pets`, {
       method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
+      body: JSON.stringify({ name, breed, image, age }),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -17,26 +21,10 @@ const newFormHandler = async (event) => {
     } else {
       alert('Failed to create profile');
     }
-  }
-};
-
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-
-    const response = await fetch(`/api/profiles/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete profile');
-    }
-  }
+  }  
 };
 
 document
-  .querySelector('.new-profile')
-  .addEventListener('submit', newFormHandler);
+  .querySelector('#form-submit')
+  .addEventListener('click', newFormHandler);
 

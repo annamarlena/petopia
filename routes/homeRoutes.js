@@ -10,11 +10,14 @@ router.get('/login', async (req, res) => {
   res.render("login")
 })
 
+// ---- Lines 16 - 21 by Katy ----
 router.get("/profile", withAuth, async (req, res) => {
   const user = await User.findByPk(req.session.user_id)
-  const pets = await Pet.findByPk(req.session.user_id)
+  const pets = await Pet.findAll({
+    where: {userId: req.session.user_id}})
   const serialUser = user.get({plain: true})
-  res.render("profile", { user: serialUser, pets: serialUser })
+  const serialPets = pets.map(pet => pet.get({plain: true}))
+  res.render("profile", { user: serialUser, pets: serialPets })
 })
 
 router.get('/spas', async (req, res) => {
@@ -26,7 +29,6 @@ router.get('/spas', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('spas', {
       spas,
-
     });
   } catch (err) {
     res.status(500).json(err);
