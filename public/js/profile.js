@@ -1,7 +1,6 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  // ---- Lines 5 - 17 from Katy ----
   const name = document.querySelector('#name').value.trim();
   const breed = document.querySelector('#breed').value.trim();
   const image = document.querySelector('#input-file').value.trim();
@@ -21,10 +20,9 @@ const newFormHandler = async (event) => {
     } else {
       alert('Failed to create profile');
     }
-  }  
+  }
 };
 
 document
   .querySelector('#form-submit')
   .addEventListener('click', newFormHandler);
-
