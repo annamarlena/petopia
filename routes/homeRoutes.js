@@ -12,9 +12,11 @@ router.get('/login', async (req, res) => {
 
 router.get("/profile", withAuth, async (req, res) => {
   const user = await User.findByPk(req.session.user_id)
-  const pets = await Pet.findByPk(req.session.user_id)
+  const pets = await Pet.findAll({
+    where: {userId: req.session.user_id}})
   const serialUser = user.get({plain: true})
-  res.render("profile", { user: serialUser, pets: serialUser })
+  const serialPets = pets.map(pet => pet.get({plain: true}))
+  res.render("profile", { user: serialUser, pets: serialPets })
 })
 
 router.get('/spas', async (req, res) => {
@@ -62,6 +64,7 @@ router.get('/products', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
