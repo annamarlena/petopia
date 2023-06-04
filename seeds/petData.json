@@ -1,16 +1,16 @@
 [
-    {
-        "name": "Dizzy",
-        "image": "",
-        "breed": "pooch",
-        "age": 85,
-        "userId": 1
-    },
-    {
-        "name": "Buddy",
-        "image": "",
-        "breed": "mixed",
-        "age": 6,
-        "userId": 2
-    }
+  {
+    "name": "Dizzy",
+    "image": "",
+    "breed": "pooch",
+    "age": 85,
+    "userId": 1
+  },
+  {
+    "name": "Buddy",
+    "image": "",
+    "breed": "mixed",
+    "age": 6,
+    "userId": 2
+  }
 ]

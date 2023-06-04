@@ -19,10 +19,10 @@ Hotel.init(
       type: DataTypes.STRING,
     },
     price: {
-      type: DataTypes.DECIMAL, 
-      allowNull: false, 
-      validate: {isDecimal: true}
-    }
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+      validate: { isDecimal: true },
+    },
   },
   {
     sequelize,

@@ -2,7 +2,7 @@
   {
     "name": "Soothing Saucer® Kit",
     "description": "The Soothing Saucer®’s patented design promotes licking and helps reduce feelings of stress and anxiety.",
-    "price": 35.00,
+    "price": 35.0,
     "stock": 10,
     "image": "../../soucer.webp"
   },
@@ -31,7 +31,7 @@
     "name": "Goody Box Kitten Toys & Treats",
     "description": "Inside, you’ll find everything you need to start your friendship off on the right paw: 13 action-packed toys to train their hunting skills and two full-size treats so they can snack happy.",
     "price": 24.99,
-    "stock": 5, 
+    "stock": 5,
     "image": "../../goodybox.webp"
   },
   {
@@ -44,7 +44,7 @@
   {
     "name": "iFetch Mini Automatic Ball Launcher Dog Toy",
     "description": "Designed especially for small to medium dogs, this interactive dog toy launches the ball for you! It’s perfect for when you’re away or busy, while ensuring he gets all the mental and physical exercise that he needs.",
-    "price": 110.50,
+    "price": 110.5,
     "stock": 5,
     "image": "../../iFetch.webp"
   },
@@ -58,7 +58,7 @@
   {
     "name": "P.L.A.Y. Pet Lifestyle and You American Classic Food Set Squeaky Plush Dog Toy",
     "description": "Complete with a burger, fries, a milkshake, a hot dog and a chicken drumstick, this toy set is ready for fetching, chasing and romping. Each fun toy comes with a unique feature.",
-    "price": 51.90,
+    "price": 51.9,
     "stock": 5,
     "image": "../../PLAYset.webp"
   },

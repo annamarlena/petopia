@@ -5,8 +5,7 @@
 }
 
 h1,
-h2
- {
+h2 {
   margin: 0 0 0.5rem;
   line-height: 1.25;
 }
@@ -35,7 +34,7 @@ h2
 }
 
 .btn.btn-primary:hover {
-  background-color: #4C4C4C;
+  background-color: #4c4c4c;
 }
 
 form .form-group {
@@ -76,8 +75,8 @@ form [type='radio'] {
   display: inline-block;
 }
 
-label form [type='checkbox'], label
-form [type='radio'] {
+label form [type='checkbox'],
+label form [type='radio'] {
   display: inline-block;
 }
 

@@ -1,77 +1,81 @@
 <body>
-<!-- Page Wrapper -->
-<div id="page-wrapper">
+  <!-- Page Wrapper -->
+  <div id='page-wrapper'>
 
-    <header id="header" class="alt">
-		<h1><a href="/">Petopia</a></h1>
-		<nav id="nav">
-			<ul>
-				<li class="special">
-					<a href="#menu" class="menuToggle"><span>Menu</span></a>
-					<div id="menu">
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/hotels">Pet Hotel</a></li>
-							<li><a href="/spas">Pet Spa</a></li>
-                            <li><a href="/products">Products</a></li>
-							<li><a href="/login">Log In</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <header id='header' class='alt'>
+      <h1><a href='/'>Petopia</a></h1>
+      <nav id='nav'>
+        <ul>
+          <li class='special'>
+            <a href='#menu' class='menuToggle'><span>Menu</span></a>
+            <div id='menu'>
+              <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/hotels'>Pet Hotel</a></li>
+                <li><a href='/spas'>Pet Spa</a></li>
+                <li><a href='/products'>Products</a></li>
+                <li><a href='/login'>Log In</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- Two -->
-    <section id="two" class="wrapper alt style2">
-        <section class="spotlight">
-			<div class="image"><img src="./images/GettyImages-1215180165.jpg" alt="Assortment of dog toys, treats, and dry kibble" /></div><div class="content">
-				<h2>Pet Products</h2>
-				<p>If you're in need of a restock on pet food, treats, or are looking for a new toy for your pet to enjoy, check out our Pet Products page!</p>
-			</div>
-			  </section>
-		</section>
+    <section id='two' class='wrapper alt style2'>
+      <section class='spotlight'>
+        <div class='image'><img
+            src='./images/GettyImages-1215180165.jpg'
+            alt='Assortment of dog toys, treats, and dry kibble'
+          /></div><div class='content'>
+          <h2>Pet Products</h2>
+          <p>If you're in need of a restock on pet food, treats, or are looking
+            for a new toy for your pet to enjoy, check out our Pet Products
+            page!</p>
+        </div>
+      </section>
+    </section>
 
-        <!-- Three -->
-        <section id="three" class="wrapper style3 special">
-            <div class="inner">
-                <h2>Pet Products</h2>
+    <!-- Three -->
+    <section id='three' class='wrapper style3 special'>
+      <div class='inner'>
+        <h2>Pet Products</h2>
 
-                <table>
-					<thead>
-                        <tr>
-                            <th id="uno">Name</th>
-                            <th id="dos">Description</th>
-                            <th id="tres">Price $:</th>
-                            <th>In Stock</th>
-                        </tr>
-                    </thead>
+        <table>
+          <thead>
+            <tr>
+              <th id='uno'>Name</th>
+              <th id='dos'>Description</th>
+              <th id='tres'>Price $:</th>
+              <th>In Stock</th>
+            </tr>
+          </thead>
 
-                    <tbody>
-                       {{#each products as |product|}}
-						<tr>
-							<td>{{product.name}}</td>
-							<td id="dos">{{product.description}}</td>
-							<td>{{product.price}}</td>
-							<td>{{product.stock}}</td>
-							<td>{{product.image}}</td>
-							<th><button class="button fit primary" id={{product.id}}>add to cart</button></th>
-						</tr>
-						{{/each}}
-                    </tbody>
-                </table>
-                
-            </div>
-        </section>
- </div>
+          <tbody>
+            {{#each products as |product|}}
+              <tr>
+                <td>{{product.name}}</td>
+                <td id='dos'>{{product.description}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.stock}}</td>
+                <td>{{product.image}}</td>
+                <th><button class='button fit primary' id={{product.id}}>add to
+                    cart</button></th>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
 
-    <!-- Scripts -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.scrolly.min.js"></script>
-    <script src="./js/browser.min.js"></script>
-    <script src="./js/breakpoints.min.js"></script>
-    <script src="./js/util.js"></script>
-    <script src="./js/main.js"></script>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script src='./js/jquery.min.js'></script>
+  <script src='./js/jquery.scrolly.min.js'></script>
+  <script src='./js/browser.min.js'></script>
+  <script src='./js/breakpoints.min.js'></script>
+  <script src='./js/util.js'></script>
+  <script src='./js/main.js'></script>
 </body>
- 
- 

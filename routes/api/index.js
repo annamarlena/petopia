@@ -9,7 +9,7 @@ const spaRoutes = require('./spaRoutes');
 
 // make a router for each of the routes
 router.use('/users', userRoutes);
-router.use("/createAccts", createAcctRoutes );
+router.use('/createAccts', createAcctRoutes);
 router.use('/hotels', hotelRoutes);
 router.use('/pets', petRoutes);
 router.use('/products', productRoutes);
