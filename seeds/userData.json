@@ -1,17 +1,17 @@
 [
-    {
-        "name": "Katy",
-        "email": "garyisalwayswrong@yahoo.com",
-        "password": "password12345"
-    },
-    {
-        "name": "Gary",
-        "email": "katyisalwaysright@gmail.com",
-        "password": "password12345"
-    },
-    {
-        "name": "test",
-        "email": "test@gmail.com",
-        "password": "test123"
-    }
-  ]
+  {
+    "name": "Katy",
+    "email": "garyisalwayswrong@yahoo.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Gary",
+    "email": "katyisalwaysright@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "test",
+    "email": "test@gmail.com",
+    "password": "test123"
+  }
+]

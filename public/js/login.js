@@ -1,6 +1,6 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
-  console.log("===== LOGIN BUTTON CLICKED")
+  console.log('===== LOGIN BUTTON CLICKED');
 
   // Collect values from the login form
   const email = document.querySelector('#email-login').value.trim();
@@ -25,7 +25,7 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-  console.log("===== SIGNUP BUTTON CLICKED")
+  console.log('===== SIGNUP BUTTON CLICKED');
 
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
@@ -37,8 +37,8 @@ const signupFormHandler = async (event) => {
   // })
 
   if (name && email && password) {
-    console.log("===== SIGNUP FETCH SENT")
-    console.log(name, email, password)
+    console.log('===== SIGNUP FETCH SENT');
+    console.log(name, email, password);
     const response = await fetch('/api/users/signup', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),

@@ -1,22 +1,22 @@
 [
-    {
-        "stayType": "1-day",
-        "description": "We will watch, feed, and play with your pet for 1 day",
-        "price": 99.99
-    },
-    {
-        "stayType": "3-days",
-        "description": "We will watch, feed, and play with your pet for 3 days",
-        "price": 275
-    },
-    {
-        "stayType": "5-days",
-        "description": "We will watch, feed, and play with your pet for 5 days",
-        "price": 450
-    },
-    {
-        "stayType": "1-week",
-        "description": "We will watch, feed, and play with your pet for 1 week",
-        "price": 625    
-    }
+  {
+    "stayType": "1-day",
+    "description": "We will watch, feed, and play with your pet for 1 day",
+    "price": 99.99
+  },
+  {
+    "stayType": "3-days",
+    "description": "We will watch, feed, and play with your pet for 3 days",
+    "price": 275
+  },
+  {
+    "stayType": "5-days",
+    "description": "We will watch, feed, and play with your pet for 5 days",
+    "price": 450
+  },
+  {
+    "stayType": "1-week",
+    "description": "We will watch, feed, and play with your pet for 1 week",
+    "price": 625
+  }
 ]

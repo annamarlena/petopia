@@ -24,8 +24,9 @@ Pet.init(
     age: {
       type: DataTypes.INTEGER,
     },
-    userId: {    // associates with the profile model
-      type: DataTypes.INTEGER,  
+    userId: {
+      // associates with the profile model
+      type: DataTypes.INTEGER,
       references: {
         model: 'User',
         key: 'id',

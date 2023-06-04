@@ -3,21 +3,22 @@ const { Profile, User, Spa, Hotel, Pet, Product } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-  res.render("landingpage")
-})
+  res.render('landingpage');
+});
 
 router.get('/login', async (req, res) => {
-  res.render("login")
-})
+  res.render('login');
+});
 
-router.get("/profile", withAuth, async (req, res) => {
-  const user = await User.findByPk(req.session.user_id)
+router.get('/profile', withAuth, async (req, res) => {
+  const user = await User.findByPk(req.session.user_id);
   const pets = await Pet.findAll({
-    where: {userId: req.session.user_id}})
-  const serialUser = user.get({plain: true})
-  const serialPets = pets.map(pet => pet.get({plain: true}))
-  res.render("profile", { user: serialUser, pets: serialPets })
-})
+    where: { userId: req.session.user_id },
+  });
+  const serialUser = user.get({ plain: true });
+  const serialPets = pets.map((pet) => pet.get({ plain: true }));
+  res.render('profile', { user: serialUser, pets: serialPets });
+});
 
 router.get('/spas', async (req, res) => {
   try {
@@ -28,7 +29,6 @@ router.get('/spas', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('spas', {
       spas,
-
     });
   } catch (err) {
     res.status(500).json(err);
@@ -43,7 +43,7 @@ router.get('/hotels', async (req, res) => {
     const hotels = hotelData.map((hotel) => hotel.get({ plain: true }));
     // Pass serialized data and session flag into template
     res.render('hotels', {
-      hotels
+      hotels,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -58,13 +58,12 @@ router.get('/products', async (req, res) => {
     const products = productData.map((product) => product.get({ plain: true }));
     // Pass serialized data and session flag into template
     res.render('products', {
-      products
+      products,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route

@@ -5,9 +5,8 @@ const userData = require('./userData.json');
 const petData = require('./petData.json');
 const spaData = require('./spaData.json');
 const hotelData = require('./hotelData.json');
-const reservationData = require('./reservationData.json')
-const productData = require('./productData.json')
-
+const reservationData = require('./reservationData.json');
+const productData = require('./productData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -21,7 +20,6 @@ const seedDatabase = async () => {
   await Spa.bulkCreate(spaData);
   await Reservation.bulkCreate(reservationData);
   await Product.bulkCreate(productData);
-  
 
   process.exit(0);
 };

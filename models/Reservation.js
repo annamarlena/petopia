@@ -15,24 +15,24 @@ Reservation.init(
     date: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: new Date()
+      defaultValue: new Date(),
     },
-    hotelId: {    
-      type: DataTypes.INTEGER,  
+    hotelId: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'Hotel',
         key: 'id',
       },
     },
-    spaId: {    
-      type: DataTypes.INTEGER,  
+    spaId: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'Spa',
         key: 'id',
       },
     },
-    petId: {   
-      type: DataTypes.INTEGER,  
+    petId: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'Pet',
         key: 'id',

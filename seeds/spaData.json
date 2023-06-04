@@ -1,22 +1,22 @@
 [
-    {
-        "serviceType": "Shampoo bath",
-        "description": "We will give your animal a bath along with a thorough deep clean and rinse using shampoo.",
-        "price": 50
-    },
-    {
-        "serviceType": "Haircut",
-        "description": "Is your animal's coat getting too long and scruffy? We will give them a trim-up according to what you want.",
-        "price": 60
-    },
-    {
-        "serviceType": "Brushing",
-        "description": "We also offer pet brushing which will take your pet's scruffy coat and make it silky smooth.",
-        "price": 40
-    },
-    {
-        "serviceType": "Nail Clipping",
-        "description": "Lastly we also clip all your pet's long nails.",
-        "price": 30
-    }
+  {
+    "serviceType": "Shampoo bath",
+    "description": "We will give your animal a bath along with a thorough deep clean and rinse using shampoo.",
+    "price": 50
+  },
+  {
+    "serviceType": "Haircut",
+    "description": "Is your animal's coat getting too long and scruffy? We will give them a trim-up according to what you want.",
+    "price": 60
+  },
+  {
+    "serviceType": "Brushing",
+    "description": "We also offer pet brushing which will take your pet's scruffy coat and make it silky smooth.",
+    "price": 40
+  },
+  {
+    "serviceType": "Nail Clipping",
+    "description": "Lastly we also clip all your pet's long nails.",
+    "price": 30
+  }
 ]
